@@ -21,5 +21,9 @@ pipeline {
 						echo "Integration Test"
 				}
 			}
+		} post {
+			failure {
+				echo ' I run when I fail'
+			}
 		}
 }
